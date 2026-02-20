@@ -9,7 +9,14 @@
  * Reads analog brightness data from LDR sensor
  * and displays structured output via Serial Monitor.
  */
+ // TODO 1: Define LDR analog pin (Use A0)
+ #define LDR_PIN A0
 
+ // TODO 2: Create variable to store sensor reading
+ int ldrValue = 0;
+
+ // Optional: Define brightness threshold
+ const int LIGHT_THRESHOLD = 500;
  
 
 void setup() {
