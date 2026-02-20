@@ -20,12 +20,14 @@
  
 
 void setup() {
+   // TODO 3: Initialize Serial communication
+    Serial.begin(9600);
 
-    // TODO 3:
-    // Initialize Serial communication (9600 baud rate)
-
-    // TODO 4:
-    // Print system initialization message
+    // TODO 4: Print system initialization message
+    Serial.println("=================================");
+    Serial.println("   LDR Light Monitoring System   ");
+    Serial.println("   System Initialized Successfully");
+    Serial.println("=================================");
 }
 
 void loop() {
